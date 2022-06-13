@@ -1,6 +1,18 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir.eot") format("eot"), url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff") format("woff2"), url("../fonts/vazir.woff2") format("woff");
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: "vazir";
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
 }
 
 header#header {
@@ -9,11 +21,44 @@ header#header {
     position: relative;
 }
 
+header nav {
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    z-index: 1;
+}
+
+header nav ul {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #c00;
+}
+
 .for {
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     pointer-events: none;
     background-size: cover;
     width: 100%;
@@ -40,8 +85,8 @@ header#header {
     pointer-events: none;
 }
 
-.test {
-    height: 500px;
-    width: 100%;
-    background-color: red;
+.wolf {
+    background-image: url("../images/www.svg");
+    background-size: cover;
+    height: 800px;
 }
