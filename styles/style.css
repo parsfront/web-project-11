@@ -165,3 +165,121 @@ header nav ul li a:hover {
     color: #fff;
     text-align: center;
 }
+
+/* footer */
+
+footer {
+    background-image: url("../images/lionbg.svg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+footer .overlay {
+    background-color: rgba(22, 2, 31, 0.918);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 80px 0;
+    height: 100vh;
+}
+
+footer .overlay .footer-title {
+    text-align: center;
+    color: #fff;
+}
+
+footer .overlay .footer-title h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+footer .overlay .footer-title p {
+    font-size: 18px;
+}
+
+footer .overlay form {
+    width: 420px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+footer .overlay form input {
+    width: 100%;
+    color: #fff;
+    margin: 7px 0;
+    padding: 10px;
+    font-family: vazir;
+    background: none;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+footer .overlay form button {
+    padding: 10px;
+    width: 200px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    font-family: vazir;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    margin-top: 7px;
+    background: none;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+footer .overlay form button:hover {
+    background-color: rgb(74, 11, 126);
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+footer .overlay .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+footer .overlay .social ul {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+footer .overlay .social ul li {
+    color: #fff;
+}
+
+footer .overlay .social ul li a {
+    color: #fff;
+}
+
+footer .overlay .social ul li a svg {
+    font-size: 24px;
+}
+
+footer .overlay .description {
+    text-align: center;
+    color: #fff;
+    width: 500px;
+    margin: auto;
+    font-size: 18px;
+    text-align: justify;
+}
