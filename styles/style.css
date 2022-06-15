@@ -9,6 +9,22 @@ body {
     font-family: "vazir";
 }
 
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
 ul,
 li {
     padding: 0;
@@ -85,8 +101,67 @@ header nav ul li a:hover {
     pointer-events: none;
 }
 
+/*Wolf*/
 .wolf {
+    height: 900px;
     background-image: url("../images/www.svg");
     background-size: cover;
-    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wolf .wolf-title {
+    width: 100%;
+    text-align: center;
+}
+
+.wolf .wolf-title h1 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.wolf .wolf-title p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.wolf .wolf-content {
+    color: #000;
+}
+
+.wolf .wolf-content p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+/* monkey */
+
+.monkey {
+    background-image: url("../images/monkeytwo.svg");
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.monkey .monkey-title {
+    width: 100%;
+    text-align: center;
+}
+
+.monkey .monkey-title h1 {
+    font-size: 35px;
+}
+
+.monkey .monkey-title p {
+    font-size: 19px;
+}
+
+.monkey .monkey-content {
+    color: #fff;
+    text-align: center;
 }
