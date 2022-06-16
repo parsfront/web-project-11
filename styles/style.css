@@ -7,11 +7,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "vazir";
+    direction: rtl;
 }
 
 .container {
     width: 900px;
     margin: auto;
+    padding: 0 15px;
 }
 
 h1,
@@ -45,14 +47,14 @@ header nav {
 }
 
 header nav ul {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     width: 100%;
     list-style: none;
 }
 
 header nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -75,9 +77,6 @@ header nav ul li a:hover {
     right: 0;
     left: 0;
     bottom: -1px;
-    pointer-events: none;
-    background-size: cover;
-    width: 100%;
 }
 
 .sky {
@@ -91,6 +90,7 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     pointer-events: none;
+    z-index: -1;
 }
 
 .moon {
@@ -110,7 +110,14 @@ header nav ul li a:hover {
     flex-direction: column;
     justify-content: space-around;
 }
-
+.wolf-child {
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: auto;
+    padding: 10px;
+    margin-top: 278px;
+}
 .wolf .wolf-title {
     width: 100%;
     text-align: center;
@@ -128,7 +135,8 @@ header nav ul li a:hover {
 }
 
 .wolf .wolf-content {
-    color: #000;
+    color: #fff;
+    display: flex;
 }
 
 .wolf .wolf-content p {
@@ -146,11 +154,13 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    display: flex;
 }
 
 .monkey .monkey-title {
     width: 100%;
     text-align: center;
+    display: flex;
 }
 
 .monkey .monkey-title h1 {
@@ -164,6 +174,7 @@ header nav ul li a:hover {
 .monkey .monkey-content {
     color: #fff;
     text-align: center;
+    display: flex;
 }
 
 /* footer */
@@ -171,8 +182,9 @@ header nav ul li a:hover {
 footer {
     background-image: url("../images/lionbg.svg");
     background-size: cover;
-    height: 100vh;
+    height: 900px;
     position: relative;
+    display: flex;
 }
 
 footer .overlay {
@@ -183,7 +195,6 @@ footer .overlay {
     bottom: 0;
     left: 0;
     padding: 80px 0;
-    height: 100vh;
 }
 
 footer .overlay .footer-title {
